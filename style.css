@@ -1,0 +1,162 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.clearfix::after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+
+header {
+  background-color: rgb(105, 158, 14);
+  color: white;
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+
+#main-screen {
+  margin: 0;
+  background-image: url("safariwallpaper.jpeg");
+  height: 100vh;
+  width: 100%;
+  margin-bottom: 25px;
+  background-size: cover;
+  background-position: center bottom;
+  position: absolute;
+}
+
+h1 {
+  background-color: rgb(105, 158, 14);
+  margin-bottom: auto;
+  font-size: 50px;
+  text-align: center;
+}
+
+#btn {
+  background-color: rgb(105, 158, 14);
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.carousel-item {
+  height: 925px;
+}
+
+.center {
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+  position: relative;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgb(105, 158, 14);
+  color: white;
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  #main-screen {
+    background-size: cover;
+    background-position: center bottom;
+    position: absolute;
+    height: 100vh;
+    overflow: hidden;
+  }
+  .center {
+    margin: auto;
+    width: 75%;
+    padding: 10px;
+    position: relative;
+  }
+}
+.footer {
+  background-color: rgb(105, 158, 14);
+  color: white;
+  position: fixed;
+}
+
+@media screen and (max-width: 1024px) and (orientation: landscape){
+  body{
+    overflow:hidden;
+  }
+}
+
+@media screen and (max-width: 812px) and (orientation: landscape){
+    body{
+      overflow:hidden;
+    }
+    #main-screen {
+      background-size: cover;
+      background-position: center bottom;
+      position: absolute;
+      height: 100vh;
+      overflow: hidden;
+    }
+    .center {
+      margin: auto;
+      width: 275px;
+      height: 50px;
+      padding: 10px;
+      position: relative;
+    }
+    .footer {
+      background-color: rgb(105, 158, 14);
+      color: white;
+      position: fixed;
+    }
+}
+
+@media screen and (max-width: 768px) {
+  #main-screen {
+    background-size: cover;
+    background-position: center bottom;
+    position: absolute;
+    height: 100vh;
+    overflow: hidden;
+  }
+  body{
+    overflow:hidden;
+  }
+  .center {
+    margin: auto;
+    width: 75%;
+    padding: 10px;
+    position: relative;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  #main-screen {
+    background-size: cover;
+    background-position: center bottom;
+    position: absolute;
+    height: 100vh;
+    overflow: hidden;
+  }
+  .center {
+    margin: auto;
+    width: 100vw;
+    padding: 10px;
+    position: relative;
+  }
+  body{
+    overflow:hidden;
+  }
+  .footer{
+    padding-top: 10px;
+  }
+}
